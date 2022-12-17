@@ -1,0 +1,37 @@
+body{       /*setting page default*/
+    margin:0;
+    background-color: white;
+    padding:0;
+}
+
+.container{
+    display:flex; /*creates flexbox*/
+    flex-direction: column; /*sets the flex direction to column*/
+    align-items: center; /*centers container horizontally*/
+    justify-content: center; /*centers container vertically*/
+    width:100%; /*sets container to entire screen*/
+    max-width: 0 auto; /*max width is auto generated*/
+}
+
+#game-board{        /*targetting with a # because is an id*/
+    background-color: black;
+    width: 900px;
+    height: 900px;
+    display:grid;   /*creates grid*/
+    grid-template-columns: repeat(21,1fr); /*grid has 21 columns that are equally sized*/
+    grid-template-rows: repeat(21,1fr); /*grid has 21 rows that are equally sized*/
+}
+
+#score{
+    font-size: 40px;
+}
+
+.snake{
+    background-color: green;
+    border: .25vmin solid white;
+}
+
+.food{
+    background-color: red;
+    border: .25vmin solid white;
+}
